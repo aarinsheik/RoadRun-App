@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559815845439",
+    "project_id": "road-run-ff030",
+    "storage_bucket": "road-run-ff030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559815845439:android:a1485eb22eb3aec3d7ba8a",
+        "android_client_info": {
+          "package_name": "com.example.roadrun"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR4WZxR-EE77V3B9H9SOKq8MCxymQQcBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

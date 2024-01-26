@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mr1"
+    android:background="@color/light_green"
+    tools:context=".landing_page">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bottom">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/pacifico_regular"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:text="Vechicle Info"
+            android:textColor="@color/light_green"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@+id/t1"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30sp"
+            android:src="@drawable/car_search_logo" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroke"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r1">
+
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="130sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/traffic_cone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t2"
+            android:textSize="22sp"
+            android:layout_below="@+id/img1"
+            android:fontFamily="@font/specialelite_regular"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:text="Enter Vehicle Number"/>
+
+        <EditText
+            android:id="@+id/vnoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/upload_input_custom_design"
+            android:elevation="5sp"
+            android:padding="10sp"
+            android:hint="  KA01AB1234"
+            android:fontFamily="@font/specialelite_regular"
+            android:textColor="@color/background_green"
+            android:textColorHint="@color/background_green"
+            android:textSize="20sp" />
+
+
+
+        <Button
+            android:id="@+id/sub_but"
+            android:layout_below="@id/vnoET"
+            android:textSize="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/light_green"
+            android:fontFamily="@font/pacifico_regular"
+            android:backgroundTint="@color/background_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_below="@+id/sub_but"
+            android:background="@drawable/stroke">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pridimedium"
+                    android:textColor="@color/dark_green"
+                    android:textSize="22sp"
+                    android:text="Vehicle Name : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usr_nm"
+                    android:textColor="@color/background_green"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/yantramanav_medium"
+                    android:text="Aarin Sheik "/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_green"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pridimedium"
+                    android:textColor="@color/dark_green"
+                    android:textSize="22sp"
+                    android:text="Vehicle Name: "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usr_vnm"
+                    android:textColor="@color/background_green"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/yantramanav_medium"
+                    android:text="KA03AS1590"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_green"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pridimedium"
+                    android:textColor="@color/dark_green"
+                    android:textSize="22sp"
+                    android:text="Fine Amount : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usr_fine"
+                    android:textColor="@color/background_green"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/yantramanav_medium"
+                    android:text="Rs. 5000 "/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_green"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pridimedium"
+                    android:textColor="@color/dark_green"
+                    android:textSize="22sp"
+                    android:text="Reason : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usr_reason"
+                    android:textColor="@color/background_green"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/yantramanav_medium"
+                    android:text="Not Wearing Helmet "/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

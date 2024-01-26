@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".upload_page">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bottom">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/pacifico_regular"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:text="Upload Vehicle Details"
+            android:textColor="@color/light_green"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="140sp"
+            android:layout_height="110sp"
+            android:layout_below="@+id/t1"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30sp"
+            android:background="@drawable/traffice_police_2" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_style"
+        android:scrollbarSize="7dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="false"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r1">
+
+        <!-- editText 1 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t2"
+            android:textSize="30sp"
+            android:fontFamily="@font/specialelite_regular"
+            android:textColor="@color/background_green"
+            android:layout_marginTop="5mm"
+            android:layout_marginLeft="30sp"
+            android:text="Owner name"/>
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/upload_input_custom_design"
+            android:elevation="5sp"
+            android:padding="10sp"
+            android:hint="  Person Name"
+            android:fontFamily="@font/yantramanav_regular"
+            android:textColor="@color/background_green"
+            android:textColorHint="@color/background_green"
+            android:textSize="20sp" />
+
+        <!--edit_text 2-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t3"
+            android:textSize="30sp"
+            android:fontFamily="@font/specialelite_regular"
+            android:textColor="@color/background_green"
+            android:layout_marginTop="2sp"
+            android:layout_marginLeft="30sp"
+            android:text="vehicle Name "/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/upload_input_custom_design"
+            android:elevation="5sp"
+            android:padding="10sp"
+            android:hint="  Enter Model Name"
+            android:fontFamily="@font/yantramanav_regular"
+            android:textColor="@color/background_green"
+            android:textColorHint="@color/background_green"
+            android:textSize="20sp" />
+
+        <!-- editText 3 -->
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="2sp"
+            android:fontFamily="@font/specialelite_regular"
+            android:text="Vehicle Number"
+            android:textColor="@color/background_green"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/upload_input_custom_design"
+            android:elevation="5sp"
+            android:padding="10sp"
+            android:hint="  KA18AS1590"
+            android:fontFamily="@font/yantramanav_regular"
+            android:textColor="@color/background_green"
+            android:textColorHint="@color/background_green"
+            android:textSize="20sp" />
+
+        <!-- editText 4 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t5"
+            android:textSize="30sp"
+            android:fontFamily="@font/specialelite_regular"
+            android:textColor="@color/background_green"
+            android:layout_marginTop="2sp"
+            android:layout_marginLeft="30sp"
+            android:text="Fine Amount"/>
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/upload_input_custom_design"
+            android:elevation="5sp"
+            android:padding="10sp"
+            android:hint="  Enter Amount"
+            android:inputType="number"
+            android:fontFamily="@font/yantramanav_regular"
+            android:textColor="@color/background_green"
+            android:textColorHint="@color/background_green"
+            android:textSize="20sp" />
+
+        <!-- EditText 5  (reason)-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t6"
+            android:textSize="30sp"
+            android:fontFamily="@font/specialelite_regular"
+            android:textColor="@color/background_green"
+            android:layout_marginTop="2sp"
+            android:layout_marginLeft="30sp"
+            android:text="Reason"/>
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/upload_input_custom_design"
+            android:elevation="5sp"
+            android:padding="10sp"
+            android:hint="  Enter Reason"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="start"
+            android:fontFamily="@font/yantramanav_regular"
+            android:textColor="@color/background_green"
+            android:textColorHint="@color/background_green"
+            android:textSize="20sp" />
+
+
+        <!-- Button-->
+        <Button
+            android:id="@+id/submit_but"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/light_green"
+            android:fontFamily="@font/pacifico_regular"
+            android:backgroundTint="@color/background_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
